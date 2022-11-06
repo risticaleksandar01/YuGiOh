@@ -1,0 +1,138 @@
+.logo{
+    width: 300px;
+    height: 100px;
+}
+
+.dete{
+    background-color: rgb(89, 27, 147);
+    width: 20%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    flex-shrink: 2;
+    flex-grow: 1;
+    color: white;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: rgb(70, 21, 115);
+    position: relative;
+    
+}
+
+.glavni{
+    background-color: rgb(89, 27, 147);
+    width: 40%;
+    height: 100px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    
+   
+}
+
+body{
+   
+    background-image: url("/slike/pozadina.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%; 
+    margin: 0px;
+    
+}
+.roditelj{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+.tekst{
+    background-color: rgba(133, 18, 18, 0.805);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 120px;
+    padding: 5%;
+    padding-top: 3%;
+    border-style: solid;
+    border-color: rgb(196, 144, 13);
+    color: white;
+}
+
+.dete:hover{
+    background-color: rgb(70, 21, 115);
+   
+}
+
+.meni{
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    background-color: rgb(89, 27, 147);
+   visibility: hidden;
+   border-left: 0px;
+   border-top: 0px;
+   border-bottom: 5px;
+   border-right: 0px;
+   border-style: solid;
+   border-color: rgb(70, 21, 115);
+}
+
+#meni{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-width: 150px;
+    
+}
+#meni:hover .meni{
+   visibility: visible;
+}
+.meni:hover{
+    background-color: rgb(70, 21, 115);
+}
+#naslov{
+    text-align: center;
+}
+
+.decaKarte{
+    background-color: rgb(109, 15, 15) ;
+    border-style: solid;
+    border-color: rgb(196, 144, 13);
+   height: 350px;
+   width: 220px;
+   margin: 3%;
+   position: relative;
+   z-index: 1;
+  
+   
+}
+.karte{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+    
+}
+.opis{
+    position: absolute;
+    top: 320px;
+    width: 220px;
+    background-color: rgb(109, 15, 15) ;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    z-index: 1;
+    visibility: hidden;
+    
+}
+.decaKarte:hover .opis{
+visibility: visible;
+}
